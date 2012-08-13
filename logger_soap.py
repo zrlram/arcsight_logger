@@ -12,7 +12,7 @@ import time, sys
 
 user = "raffy"
 password = "password"
-server = "https://home.kramerapps.com:9090/soap/services/"
+server = "https://my.machine.com:9090/soap/services/"
 query = "BitTorrent | fields - _EventTime - _PeerName - _raw | cef name sourceAddress destinationAddress destinationPort"
 start = int(time.mktime((datetime.now() - timedelta(minutes=800)).timetuple())) * 1000
 #end = int(time.mktime((datetime.now() - timedelta(minutes=480)).timetuple())) * 1000
